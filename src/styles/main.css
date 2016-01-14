@@ -1,5 +1,37 @@
+h1 {
+	font-size: 1.5em;
+}
 #container {
 	max-width: 800px;
 	margin: 0 auto;
 }
+#homeworks {
+	display: inline-block;
+	width: 74%;
+}
+nav {
+	vertical-align: top;
+	display: inline-block;
+	width: calc(25% - 20px);
+	padding-right: 20px;
+	box-sizing: border-box;
+	border-right: 1px dotted rgba(0,0,0,0.5);
+	margin-right: 20px;
+	min-height: 100vh;
+}
+img {
+	max-width: 600px;
+	width: 100%;
+}
 
+@media all and (max-width: 500px) {
+	nav, #homeworks {
+		width: 100%;
+	}
+	nav {
+		min-height: 0;
+		border-right: 0;
+		border-bottom: 1px dotted rgba(0,0,0,0.5);
+		padding-bottom: 30px;
+	}
+}
