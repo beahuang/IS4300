@@ -1,5 +1,16 @@
+body {
+	font-family: "Lato";
+}
 h1 {
-	font-size: 1.5em;
+	font-size: 2.5em;
+	margin-bottom: 0;
+}
+h3 {
+	font-size: 1.3em;
+	margin-top: 0.5em;
+}
+h4 {
+	font-size: 1.1em;
 }
 #container {
 	max-width: 800px;
@@ -7,7 +18,17 @@ h1 {
 }
 #homeworks {
 	display: inline-block;
-	width: 74%;
+	border-left: 1px solid rgba(0,0,0,0.5);
+	width: calc(74% - 20px);
+	padding-left: 20px;
+}
+#homeworks section {
+	border-bottom: 1px solid rgba(0,0,0,0.5);
+	padding-bottom: 20px;
+}
+hr{
+	border: none;
+	border-bottom: 1px solid rgba(0,0,0,0.5);
 }
 nav {
 	vertical-align: top;
@@ -15,9 +36,17 @@ nav {
 	width: calc(25% - 20px);
 	padding-right: 20px;
 	box-sizing: border-box;
-	border-right: 1px dotted rgba(0,0,0,0.5);
-	margin-right: 20px;
 	min-height: 100vh;
+}
+nav h3 {
+	text-decoration: underline;
+}
+nav h4 {
+	margin-bottom: 0.5em;
+}
+nav section {
+	padding-bottom: 20px;
+	border-bottom: 1px dotted rgba(0,0,0,0.5);
 }
 img {
 	max-width: 600px;
