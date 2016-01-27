@@ -1,6 +1,23 @@
+
+/*GENERAL*/
 body {
 	font-family: "Lato";
 }
+hr{
+	border: none;
+	border-bottom: 1px solid rgba(0,0,0,0.5);
+}
+img {
+	max-width: 450px;
+	width: 100%;
+	margin: 0 auto;
+	display: block;
+}
+p {
+	margin-bottom: 0.5em;
+}
+
+/*TYPOGRAPHY*/
 h1 {
 	font-size: 2.5em;
 	margin-bottom: 0;
@@ -16,27 +33,14 @@ h4 {
 	max-width: 800px;
 	margin: 0 auto;
 }
-#homeworks {
-	display: inline-block;
-	border-left: 1px solid rgba(0,0,0,0.5);
-	width: calc(74% - 20px);
-	padding-left: 20px;
-}
-#homeworks section {
-	border-bottom: 1px solid rgba(0,0,0,0.5);
-	padding-bottom: 20px;
-}
-hr{
-	border: none;
-	border-bottom: 1px solid rgba(0,0,0,0.5);
-}
+
+/*NAV*/
 nav {
 	vertical-align: top;
 	display: inline-block;
 	width: calc(25% - 20px);
 	padding-right: 20px;
 	box-sizing: border-box;
-	min-height: 100vh;
 }
 nav h3 {
 	text-decoration: underline;
@@ -48,19 +52,49 @@ nav section {
 	padding-bottom: 20px;
 	border-bottom: 1px dotted rgba(0,0,0,0.5);
 }
-img {
-	max-width: 600px;
-	width: 100%;
+
+/*HOMEWORK*/
+#homeworks {
+	display: inline-block;
+	border-left: 1px solid rgba(0,0,0,0.5);
+	width: calc(74% - 20px);
+	padding-left: 20px;
+}
+#homeworks section {
+	border-bottom: 1px solid rgba(0,0,0,0.5);
+	padding-bottom: 20px;
 }
 
+/*PROJECT*/
+#project #about {
+	text-align: center;
+}
+#project #about span {
+	display: inline-block;
+	width: 32%;
+}
+#project #about span h3 {
+	margin-bottom: 0;
+}
+#project #about span p {
+	margin-top: 0.5em;
+}
+
+/*MEDIA QUERIES*/
 @media all and (max-width: 500px) {
-	nav, #homeworks {
+	nav, #homeworks,#project #about span {
 		width: 100%;
 	}
 	nav {
-		min-height: 0;
-		border-right: 0;
-		border-bottom: 1px dotted rgba(0,0,0,0.5);
+		border-bottom: 2px solid black;
+	}
+	ul {
+		padding-left: 20px;
+	}
+	#homeworks {
+		border-left: 0;
+		padding-left: 0;
 		padding-bottom: 30px;
 	}
+
 }
