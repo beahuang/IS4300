@@ -111,6 +111,9 @@ nav section {
 	body {
 		margin: 0 8px;
 	}
+	#project #about {
+		text-align: left;
+	}
 	nav, #homeworks,#project #about span {
 		width: 100%;
 	}
