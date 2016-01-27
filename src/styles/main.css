@@ -54,7 +54,7 @@ nav section {
 #pageNav {
 	display: block;
 	text-align: left;
-	margin: 0 20px;
+	margin: 0 auto;
 	width: 100%;
 	border-bottom: 2px solid rgba(0,0,0,0.5);
 	padding: 20px 0;
@@ -110,9 +110,6 @@ nav section {
 @media all and (max-width: 500px) {
 	body {
 		margin: 0 8px;
-	}
-	#pageNav {
-		margin: 0;
 	}
 	nav, #homeworks,#project #about span {
 		width: 100%;
