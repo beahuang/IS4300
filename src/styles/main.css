@@ -2,10 +2,11 @@
 /*GENERAL*/
 body {
 	font-family: "Lato";
+	margin: 0;
 }
-hr{
-	border: none;
-	border-bottom: 1px solid rgba(0,0,0,0.5);
+.container {
+	max-width: 800px;
+	margin: 0 auto;
 }
 img {
 	max-width: 450px;
@@ -21,6 +22,7 @@ p {
 h1 {
 	font-size: 2.5em;
 	margin-bottom: 0;
+	margin-top: 0.5em;
 }
 h3 {
 	font-size: 1.3em;
@@ -29,10 +31,7 @@ h3 {
 h4 {
 	font-size: 1.1em;
 }
-#container {
-	max-width: 800px;
-	margin: 0 auto;
-}
+
 
 /*NAV*/
 nav {
@@ -51,6 +50,33 @@ nav h4 {
 nav section {
 	padding-bottom: 20px;
 	border-bottom: 1px dotted rgba(0,0,0,0.5);
+}
+#pageNav {
+	display: block;
+	text-align: left;
+	margin: 0 20px;
+	width: 100%;
+	border-bottom: 2px solid rgba(0,0,0,0.5);
+	padding: 20px 0;
+}
+#pageNav li {
+	display: inline-block;
+}
+#pageNav li a {
+	text-decoration: none;
+	padding-right: 20px;
+	font-size: 1.3em;
+}
+#pageNav li.active {
+	text-decoration: underline;
+	font-weight: bold;
+}
+
+/*ABOUT*/
+#about {
+	padding: 20px 0;
+	border-bottom: 1px solid rgba(0,0,0,0.5);
+	margin-bottom: 20px;
 }
 
 /*HOMEWORK*/
@@ -82,6 +108,12 @@ nav section {
 
 /*MEDIA QUERIES*/
 @media all and (max-width: 500px) {
+	body {
+		margin: 0 8px;
+	}
+	#pageNav {
+		margin: 0;
+	}
 	nav, #homeworks,#project #about span {
 		width: 100%;
 	}
