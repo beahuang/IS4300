@@ -43,6 +43,134 @@
 				</section>
 			</nav>
 			<section id="homeworks">
+				<section id="p5b">
+					<h4>Project Assignment #5b</h4>
+					<p><b>Briefing</b></p>
+					<p>Hello, we are designing a web application for reading and storing comic book files. There are additional functions of purchasing new files and creating a reading list. You may interact with it like you would with other online applications for either manga or comics you might have used in the past.</p>
+					<p><b>Informed Consent:</b></p>
+					<p>
+						We are conducting a study to find out what people think about our new web application called Comicable. We will not record or publish any information with your name. This is for a course we’re taking in Human-Computer Interaction from Professor Sprague in the College of Computer and Information Science. Your participation is voluntary and you can stop anytime and ask that your data not be used. It should take no longer than 20 minutes. Do you agree to participate?
+						<br/><br/>
+						The purpose of today’s session is to help us figure out how to make Comicable’s interface more intuitive before we finish developing the final product. Since we have not yet produced a web version of Comicable, we will present you with paper versions of the interface and Joana will act as the computer. You may interact with the paper prototypes just as you would on an actual computer.
+						<br/><br/>
+						We will present you with four different tasks and your goal is to try to complete them using the paper interface. While you do this, please feel free to speak aloud any questions, comments, or concerns (if something is confusing or doesn’t make sense, tell us!) The other members of the team will be watching and quietly taking notes.
+						<br/><br/>
+						The prototype still has some rough edges—we’re still thinking through how it should work and some parts of it are incomplete. We want to get some feedback about how well this design works before we start working on the finished.
+						<br/><br/>
+						As we mentioned before, Joana will be playing the computer. Joana won’t be able to explain anything. If you want to do something, you’ll need to interact with the prototype just as you would on a computer. Use your finger to click on buttons. If you need to write something, you can use this pencil as your keyboard. It is perfectly okay to write on the prototype.
+						<br/><br/>
+						Please tell us what makes sense to you, what’s confusing, and any questions that come to mind. Your questions are especially valuable, but we may not answer them right away because our goal is to change the interface so it answers them.
+						<br/><br/>
+						OK, here’s the first thing we’d like you to do. Take a minute to read this and let me know if it makes sense. If so, then whenever you’re ready please show us what you would do first.
+					</p>
+					<p><b>Scenario Tasks</b></p>
+					<ol>
+						<li>
+							Upload a comic file from your computer and fill in the appropriate information.
+						</li>
+						<li>
+							Read issue #3 from the series ‘Spiderman
+						</li>
+						<li>
+							Purchase a comic file from the series ‘Aquaman
+						</li>
+						<li>
+							Create a reading list of your favorite comic book series
+						</li>
+					</ol>
+					<p>
+						<b>Demographic:</b>
+						<br/>
+						Our three participants are all 4th or 5th year students at Northeastern University.
+					</p>
+					<p>
+						<b>Test Scenario:</b>
+						<br/>
+						The testing took place Saturday March 12th around 3PM in an off-campus apartment living room. A dining table was used as a surface to work on. In addition to the paper prototype, the only other equipment that was used was a notebook and a laptop for the observation notes.
+					</p>
+					<p>
+						<b>Observations</b>
+					</p>
+					<ol>
+						<li>
+							When wanting to upload a comic book, the participants were confused about the dialog window, because they didn’t realize that for the text areas, they shouldn’t click on Title/Issue # but only write from the keyboard. They didn’t realize that the cursor started in the field, so we should’ve specified that they can just start typing when the cursor is in those fields.
+						</li>
+						<li>
+							The “Choose Cover” button didn’t get noticed, so the participants skipped that step, which is the most important one when uploading a comic book, since all our comic books need a cover photo. We should’ve specified that choosing a cover image is a required step before trying to upload a comic book.
+						</li>
+						<li>
+							‘$’ sign didn’t play any role, because it didn’t seem logical for the participants to click it when trying to buy an issue. We should’ve made it more visible.
+						</li>
+						<li>
+							We need to make sure the tabs have consistent names. Two different prototypes had the ‘Recently Released’ tab named differently and the participants got confused.
+						</li>
+						<li>
+							After having entered the payment information, the users complained that we were four dialog windows deep. Instead of piling the prototype papers on top of each other, we should’ve have kept only the one that should the current action and discarded the previous ones. That way, it is clear to users that they won’t be dealing with nested pop-ups.
+						</li>
+						<li>
+							When asked to create a Reading list, they were confused as to where to start, either from the front page, or go to “Reading List” tab. We should’ve specified that they can add the issues directly from the “All Files” page by clicking the heart button and that the “Reading List” section was to see the comic books already read.
+						</li>
+					</ol>
+					<p>
+						<b>Application Problems:</b>
+					</p>
+					<ol>
+						<li>
+							Unnecessary confirmation dialogs. The participants seemed to be annoyed by the pop-ups, and instead we should use either messages or other visual feedback(see Participant 1/suggestion
+						</li>
+						<li>
+							Our ‘Recently Released’ section should be called ‘Store’ instead and have a breakdown of most recent and old issues, so the users can have the choice of reading both old and new comic books.
+						</li>
+						<li>
+							Heart icon and info button should look more like a clickable button.
+						</li>
+						<li>
+							Misconnection between the heart button and its relation to the “Reading List” section. We should either rename it to “Favorites” and make the heart button bigger, or change the functionality completely. The new functionality consists in having a “Reading Lists” instead, which would be a dropdown of all the different reading lists that the user has created based on the genre of the comic book. We’ll also have to replace the heart button with a +/Add button, which will add a certain comic book to a specific reading list. This way we give the user the chance to categorize reading lists, and not just have only one.
+						</li>
+						<li>
+							Instead of giving a dialog box when adding to reading list, make feedback less intrusive like a toast notification
+						</li>
+					</ol>
+					<p>
+						<b>Interview Notes:</b>
+					</p>
+					<ul>
+						<b>Participant 1</b><br/><br/>
+						<li>
+							When asked to do the first task(i.e to upload a comic book), the participant was confused whether or not he already had an account on Comicable.
+						</li>
+						<li>
+							Suggestion 1: when putting information about the comic book that’s about to be uploaded, we should support Tab, so the user can go from one field to the other only by hitting Tab button and not by having to click on the fields every single time.
+						</li>
+						<li>
+							Suggestion 2: instead of the confirmation dialog, which he thought was unnecessary, add visual effect. Either have the uploaded comic book appear on the first row and have that tile/comic book blink either red or green color, or have a “Thanks for uploading” message right below “All Files” or above the grid.
+						</li>
+						<br/><b>Participant 2:</b><br/><br/>
+						<li>
+							Asked if her payment information was saved, since she was a returning users. If not, she expressed that it is annoying having to enter the payment info every time she wants to buy an issue.
+						</li>
+						<li>
+							Annoyed by the amount of confirmation dialogs. She said there need to be less.
+						</li>
+						<li>
+							Suggestion: following up on the last thought, she suggested that after clicking “Complete Purchase”, we shouldn’t have a pop-up, but show either a message saying “Your payment was successful” or a link to the receipt.
+						</li>
+						<br/><b>Participant 3</b><br/><br/>
+						<li>
+							He was confused about adding a comic book to his reading list. He didn’t see the connection between the heart button and the “Reading List” section.
+						</li>
+						<li>
+							Suggestion: inside the “Reading List” section, have a +/Add button which adds the comic book directly. We should add this functionality because it makes that section have a fuller purpose. As it is right now, the only function of the “Reading List” section is to see the list of comic books marked as “Read”.
+						</li>
+					</ul>
+					<p><b>Results:</b></p>
+					<p>Time to complete all four tasks:</p>
+					<ol>
+						<li>Participant 1: 14:35</li>
+						<li>Participant 2: 12:10</li>
+						<li>Participant 3: 15:45</li>
+					</ol>
+				</section>
 				<section id="p5a">
 					<h4>Project Assignment #5a</h4>
 					<p><b>Paper Prototypes:</b></p>
